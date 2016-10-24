@@ -25,16 +25,16 @@ App({
     }
   },
 
-  calcProgress:function(num,cb){
+  getExpressInfo:function(num,cb){
 
         wx.request({
-        url: 'test.php',
+        url: 'http://apis.baidu.com/kuaidicom/express_api/express_api?muti=0&order=desc&nu='+num,
         data: {
            x: '' ,
            y: ''
         },
         header:{
-            "Content-Type":"application/json"
+            "apikey":"1df482e76b2e3b65c0a215f38a5f7133"
         },
         success: function(res) {
            var data = res.data;

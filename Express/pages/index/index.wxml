@@ -1,5 +1,10 @@
 <!--index.wxml-->
 <view class="container"> 
-  <input type="text" placeholder="input serial num" bindinput="inputValue"/>
-  <button type="primary"  bindtap="calc"> primary </button>
+  <input class="content" type="text" placeholder="请输入订单号" bindinput="inputValue"/>
+  <button class="search" type="primary"  bindtap="calc"> 查询 </button>
+   <scroll-view scroll-y="true" style="height: 300px;">
+   <view  wx:for="{{expressInfo}}">
+   {{item.context}}【{{item.time}}】
+   </view>
+  </scroll-view>
 </view>

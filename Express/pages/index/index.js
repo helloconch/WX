@@ -4,7 +4,8 @@ var app = getApp()
 Page({
   data: {
 
-    num:""
+    num:null,
+    expressInfo:null,
     
   },
 
@@ -16,8 +17,13 @@ Page({
   },
 
   calc:function(){
-
-    app.calcProgress(num,show());
+    var thisPage=this;
+    app.getExpressInfo(this.data.num,function(data){
+      console.log(data);
+        thisPage.setData({
+          expressInfo:data.data
+        });
+    });
 
   },
 
