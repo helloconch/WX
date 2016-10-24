@@ -24,6 +24,25 @@ App({
       })
     }
   },
+
+  calcProgress:function(num,cb){
+
+        wx.request({
+        url: 'test.php',
+        data: {
+           x: '' ,
+           y: ''
+        },
+        header:{
+            "Content-Type":"application/json"
+        },
+        success: function(res) {
+           var data = res.data;
+           cb(data);
+        }
+        });
+
+  },
   globalData:{
     userInfo:null
   }
