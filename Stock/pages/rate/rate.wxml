@@ -1,0 +1,53 @@
+<view class='rateContainer'>
+<view class='rateHeader'>
+<input class='rateInput' maxlength='6' bindinput="inputAValue" type='digit' placeholder='请输入A点值'></input>
+<input class='rateInput' maxlength='6' bindinput="inputBValue" type='digit' placeholder='请输入B点值'></input>
+</view>
+<view class='lineView'></view>
+<text class='rateDescription'>{{rateDescription}}</text>
+
+<view class='rateItemContainer'>
+
+<view class='rateRedItem'>
+<text class='redItem'>{{rate_38}}</text>
+<text class='itemLine'></text>
+<text class='redItemHint'>38%</text>
+</view>
+
+<view class='rateRedItem'>
+<text class='redItem'>{{rate_50}}</text>
+<text class='itemLine'></text>
+<text class='redItemHint'>50%</text>
+</view>
+<view class='rateRedItem'>
+<text class='redItem'>{{rate_62}}</text>
+<text class='itemLine'></text>
+<text class='redItemHint'>62%</text>
+</view>
+</view>
+
+<view class='lineView'></view>
+
+<text class='rateDescription'>{{rateDescription2}}</text>
+<view class='rateItemContainer'>
+
+<view class='rateRedItem'>
+<text class='redItem'>{{rate_382}}</text>
+<text class='itemLine'></text>
+<text class='redItemHint'>38.2%观察</text>
+</view>
+
+<view class='rateRedItem'>
+<text class='redItem'>{{rate_500}}</text>
+<text class='itemLine'></text>
+<text class='redItemHint'>50%搏击</text>
+</view>
+<view class='rateRedItem'>
+<text class='redItem'>{{rate_quit}}</text>
+<text class='itemLine'></text>
+<text class='redItemHint'>止损10%</text>
+</view>
+</view>
+
+
+</view>

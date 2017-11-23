@@ -15,7 +15,7 @@
   <text class='redItemHint'>2%</text>
  </view>
  <view class='stockRedItem'>
-   <text class='redItem'>{{upValue3}}</text>
+  <text class='redItem'>{{upValue3}}</text>
   <text class='itemLine'></text>
   <text class='redItemHint'>3%</text>
  </view>

@@ -1,0 +1,75 @@
+/* pages/rate/rate.wxss */
+.rateContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 80rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+}
+
+.rateHeader{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.rateInput{
+ border: 1px solid white;
+ text-align: center;
+ color: white;
+ padding: 5px;
+ margin-left: 30rpx;
+ margin-right: 30rpx;
+ font-size: 15px;
+}
+
+.lineView{
+  width: 100%;
+  height: 1px;
+  background-color: #21212C;
+  margin-top: 40rpx;
+  margin-bottom: 30rpx;
+}
+.rateItemContainer{
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-between;
+}
+.rateRedItem{
+  width: 140rpx;
+  height: 140rpx;
+  border: 1px solid #FF0080;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rateDescription{
+  color: #FFDC35;
+  font-size: 16px;
+}
+
+.redItem{
+  color: #FF0080;
+  font-size: 14px;
+}
+.itemLine{
+  width: 50%;
+  height: 1px;
+  background-color: #21212C;
+  margin-top: 1rpx;
+  margin-bottom: 1rpx;
+}
+.redItemHint{
+  font-size: 12px;
+  color: white;
+}
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color: #121318;  
+}  
